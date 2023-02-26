@@ -1,0 +1,1129 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		364D332F294BA7B500E6508D /* UserClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364D332E294BA7B500E6508D /* UserClientTests.swift */; };
+		36855470294A8C2000B16055 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3685546F294A8C2000B16055 /* LoginPage.swift */; };
+		36855472294A8C4F00B16055 /* BaseTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36855471294A8C4F00B16055 /* BaseTestCase.swift */; };
+		36855475294A8D1200B16055 /* LoginUITestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36855474294A8D1200B16055 /* LoginUITestCase.swift */; };
+		36855477294A8D9200B16055 /* PageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36855476294A8D9200B16055 /* PageObject.swift */; };
+		36855479294A955900B16055 /* AccountPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36855478294A955900B16055 /* AccountPage.swift */; };
+		36A003A6294810E90028646A /* TCABankingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A003A5294810E90028646A /* TCABankingApp.swift */; };
+		36A003A8294810E90028646A /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A003A7294810E90028646A /* RootView.swift */; };
+		36A003AA294810EB0028646A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36A003A9294810EB0028646A /* Assets.xcassets */; };
+		36A003AD294810EB0028646A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36A003AC294810EB0028646A /* Preview Assets.xcassets */; };
+		36A003D12948117C0028646A /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 36A003D02948117C0028646A /* ComposableArchitecture */; };
+		36A003D3294811980028646A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 36A003D2294811980028646A /* README.md */; };
+		36A003D6294815D10028646A /* AppContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A003D5294815D10028646A /* AppContext.swift */; };
+		36A003DF2948B6120028646A /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A003DE2948B6120028646A /* HTTPClient.swift */; };
+		36A003E62948BD400028646A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A003E52948BD400028646A /* User.swift */; };
+		36A003EE2948C3A80028646A /* UserClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A003ED2948C3A80028646A /* UserClient.swift */; };
+		36A003F02948C50A0028646A /* UserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A003EF2948C50A0028646A /* UserStore.swift */; };
+		36A003F32948E00A0028646A /* APIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A003F22948E00A0028646A /* APIConfiguration.swift */; };
+		36A003F62948E7620028646A /* JSONCoders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A003F52948E7620028646A /* JSONCoders.swift */; };
+		36AF7A32294A2324000BE44F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36AF7A31294A2324000BE44F /* LoginView.swift */; };
+		36FE0EA329492B6F0039D4C7 /* UserStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FE0EA229492B6F0039D4C7 /* UserStoreTests.swift */; };
+		36FE0EC4294946210039D4C7 /* UserClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FE0EC3294946210039D4C7 /* UserClientError.swift */; };
+		CE1315A52970B8420079D037 /* AccountStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1315A42970B8420079D037 /* AccountStoreTests.swift */; };
+		CE1315A72970B8520079D037 /* AccountClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1315A62970B8520079D037 /* AccountClientTests.swift */; };
+		CE1315AA2970B8830079D037 /* AccountClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1315A92970B8830079D037 /* AccountClient.swift */; };
+		CE1315AC2970B8BB0079D037 /* AccountClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1315AB2970B8BB0079D037 /* AccountClientError.swift */; };
+		CE1315AE2970BB020079D037 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1315AD2970BB020079D037 /* Transaction.swift */; };
+		CE292D122972C689008AF82F /* SavingsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE292D112972C689008AF82F /* SavingsClient.swift */; };
+		CE292D142972C6C9008AF82F /* SavingsClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE292D132972C6C9008AF82F /* SavingsClientError.swift */; };
+		CE3FA6C02972E70800BA1580 /* UUIDService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3FA6BF2972E70800BA1580 /* UUIDService.swift */; };
+		CE3FA6C2297311E500BA1580 /* AccountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3FA6C1297311E500BA1580 /* AccountTests.swift */; };
+		CE3FA6C42973189A00BA1580 /* Date+Range.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE500B1929721386000C6C70 /* Date+Range.swift */; };
+		CE3FA6C82973288300BA1580 /* SavingsClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3FA6C62973286600BA1580 /* SavingsClientTests.swift */; };
+		CE3FA6CA29732A8A00BA1580 /* SavingsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3FA6C929732A8A00BA1580 /* SavingsResponse.swift */; };
+		CE4C3D202970EE3E00E12217 /* TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FE0EBC29493B700039D4C7 /* TestHelpers.swift */; };
+		CE4C3D212970EE6900E12217 /* TestUserClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FE0EC029493DDF0039D4C7 /* TestUserClient.swift */; };
+		CE4C3D2A2971C97600E12217 /* TestAccountClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4C3D292971C97600E12217 /* TestAccountClient.swift */; };
+		CE500B172971E1A4000C6C70 /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE500B162971E1A4000C6C70 /* DatePickerView.swift */; };
+		CE500B1A29721386000C6C70 /* Date+Range.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE500B1929721386000C6C70 /* Date+Range.swift */; };
+		CE500B1D2972188B000C6C70 /* DateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE500B1C2972188B000C6C70 /* DateTests.swift */; };
+		CE500B1F29722335000C6C70 /* TransactionsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE500B1E29722335000C6C70 /* TransactionsPage.swift */; };
+		CE500B21297223EA000C6C70 /* TransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE500B20297223EA000C6C70 /* TransactionsView.swift */; };
+		CE500B2429722463000C6C70 /* Amount+Decimal.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE500B2229722424000C6C70 /* Amount+Decimal.swift */; };
+		CE6A2D65296F681E004F11C6 /* RoundingServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6A2D64296F681E004F11C6 /* RoundingServiceTests.swift */; };
+		CE6A2D6B296F6933004F11C6 /* RoundingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6A2D6A296F6933004F11C6 /* RoundingService.swift */; };
+		CE6A2D8B29709978004F11C6 /* AccountStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6A2D8A29709978004F11C6 /* AccountStore.swift */; };
+		CE6A2D8E29709A35004F11C6 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6A2D8D29709A35004F11C6 /* AccountView.swift */; };
+		CE6A2D9129709C5C004F11C6 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6A2D9029709C5C004F11C6 /* Account.swift */; };
+		CEC008032975C3E90016FC95 /* SavingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC008022975C3E90016FC95 /* SavingsView.swift */; };
+		CEC008052975C66D0016FC95 /* SavingsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC008042975C66D0016FC95 /* SavingsRequest.swift */; };
+		CEC0080D2975D96B0016FC95 /* SavingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC0080C2975D96B0016FC95 /* SavingsStore.swift */; };
+		CEC0080F2975DAC50016FC95 /* SavingGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC0080E2975DAC50016FC95 /* SavingGoal.swift */; };
+		CEC008122975F9920016FC95 /* SavingsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC008112975F9920016FC95 /* SavingsPage.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		36FE0EA429492C220039D4C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 36A0039A294810E90028646A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36A003A1294810E90028646A;
+			remoteInfo = BeRealTakeHomeExercise;
+		};
+		36FE0ED02949BB060039D4C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 36A0039A294810E90028646A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36A003A1294810E90028646A;
+			remoteInfo = BeRealTakeHomeExercise;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		364D332E294BA7B500E6508D /* UserClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserClientTests.swift; sourceTree = "<group>"; };
+		3685546F294A8C2000B16055 /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
+		36855471294A8C4F00B16055 /* BaseTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTestCase.swift; sourceTree = "<group>"; };
+		36855474294A8D1200B16055 /* LoginUITestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUITestCase.swift; sourceTree = "<group>"; };
+		36855476294A8D9200B16055 /* PageObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageObject.swift; sourceTree = "<group>"; };
+		36855478294A955900B16055 /* AccountPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountPage.swift; sourceTree = "<group>"; };
+		36A003A2294810E90028646A /* TCABankingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCABankingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		36A003A5294810E90028646A /* TCABankingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCABankingApp.swift; sourceTree = "<group>"; };
+		36A003A7294810E90028646A /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		36A003A9294810EB0028646A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		36A003AC294810EB0028646A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		36A003D2294811980028646A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		36A003D5294815D10028646A /* AppContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContext.swift; sourceTree = "<group>"; };
+		36A003DE2948B6120028646A /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		36A003E52948BD400028646A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		36A003ED2948C3A80028646A /* UserClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserClient.swift; sourceTree = "<group>"; };
+		36A003EF2948C50A0028646A /* UserStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStore.swift; sourceTree = "<group>"; };
+		36A003F12948D3940028646A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		36A003F22948E00A0028646A /* APIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfiguration.swift; sourceTree = "<group>"; };
+		36A003F52948E7620028646A /* JSONCoders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONCoders.swift; sourceTree = "<group>"; };
+		36AF7A31294A2324000BE44F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		36F26B042949071100C8C602 /* UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		36FE0EA129492B6F0039D4C7 /* UnitTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UnitTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		36FE0EA229492B6F0039D4C7 /* UserStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStoreTests.swift; sourceTree = "<group>"; };
+		36FE0EBC29493B700039D4C7 /* TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHelpers.swift; sourceTree = "<group>"; };
+		36FE0EC029493DDF0039D4C7 /* TestUserClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUserClient.swift; sourceTree = "<group>"; };
+		36FE0EC3294946210039D4C7 /* UserClientError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserClientError.swift; sourceTree = "<group>"; };
+		36FE0ECA2949BB060039D4C7 /* UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE1315A42970B8420079D037 /* AccountStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountStoreTests.swift; sourceTree = "<group>"; };
+		CE1315A62970B8520079D037 /* AccountClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountClientTests.swift; sourceTree = "<group>"; };
+		CE1315A92970B8830079D037 /* AccountClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountClient.swift; sourceTree = "<group>"; };
+		CE1315AB2970B8BB0079D037 /* AccountClientError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountClientError.swift; sourceTree = "<group>"; };
+		CE1315AD2970BB020079D037 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		CE292D112972C689008AF82F /* SavingsClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingsClient.swift; sourceTree = "<group>"; };
+		CE292D132972C6C9008AF82F /* SavingsClientError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingsClientError.swift; sourceTree = "<group>"; };
+		CE3FA6BF2972E70800BA1580 /* UUIDService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UUIDService.swift; sourceTree = "<group>"; };
+		CE3FA6C1297311E500BA1580 /* AccountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTests.swift; sourceTree = "<group>"; };
+		CE3FA6C62973286600BA1580 /* SavingsClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingsClientTests.swift; sourceTree = "<group>"; };
+		CE3FA6C929732A8A00BA1580 /* SavingsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingsResponse.swift; sourceTree = "<group>"; };
+		CE4C3D292971C97600E12217 /* TestAccountClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAccountClient.swift; sourceTree = "<group>"; };
+		CE500B162971E1A4000C6C70 /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
+		CE500B1929721386000C6C70 /* Date+Range.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Range.swift"; sourceTree = "<group>"; };
+		CE500B1C2972188B000C6C70 /* DateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTests.swift; sourceTree = "<group>"; };
+		CE500B1E29722335000C6C70 /* TransactionsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsPage.swift; sourceTree = "<group>"; };
+		CE500B20297223EA000C6C70 /* TransactionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsView.swift; sourceTree = "<group>"; };
+		CE500B2229722424000C6C70 /* Amount+Decimal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Amount+Decimal.swift"; sourceTree = "<group>"; };
+		CE6A2D64296F681E004F11C6 /* RoundingServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundingServiceTests.swift; sourceTree = "<group>"; };
+		CE6A2D6A296F6933004F11C6 /* RoundingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundingService.swift; sourceTree = "<group>"; };
+		CE6A2D8A29709978004F11C6 /* AccountStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountStore.swift; sourceTree = "<group>"; };
+		CE6A2D8D29709A35004F11C6 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		CE6A2D9029709C5C004F11C6 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		CEC008022975C3E90016FC95 /* SavingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingsView.swift; sourceTree = "<group>"; };
+		CEC008042975C66D0016FC95 /* SavingsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingsRequest.swift; sourceTree = "<group>"; };
+		CEC0080C2975D96B0016FC95 /* SavingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingsStore.swift; sourceTree = "<group>"; };
+		CEC0080E2975DAC50016FC95 /* SavingGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingGoal.swift; sourceTree = "<group>"; };
+		CEC008112975F9920016FC95 /* SavingsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingsPage.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		36A0039F294810E90028646A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36A003D12948117C0028646A /* ComposableArchitecture in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36F26B012949071100C8C602 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36FE0EC72949BB060039D4C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		36855473294A8CFD00B16055 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				36855474294A8D1200B16055 /* LoginUITestCase.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		3685547C294A958600B16055 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				3685546F294A8C2000B16055 /* LoginPage.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		3685547D294A958D00B16055 /* Accounts */ = {
+			isa = PBXGroup;
+			children = (
+				36855478294A955900B16055 /* AccountPage.swift */,
+				CE500B1E29722335000C6C70 /* TransactionsPage.swift */,
+			);
+			path = Accounts;
+			sourceTree = "<group>";
+		};
+		36A00399294810E90028646A = {
+			isa = PBXGroup;
+			children = (
+				36A003D2294811980028646A /* README.md */,
+				36A003A4294810E90028646A /* TCABankingApp */,
+				36F26B052949071100C8C602 /* UnitTests */,
+				36FE0ECB2949BB060039D4C7 /* UITests */,
+				36A003A3294810E90028646A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		36A003A3294810E90028646A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				36A003A2294810E90028646A /* TCABankingApp.app */,
+				36F26B042949071100C8C602 /* UnitTests.xctest */,
+				36FE0ECA2949BB060039D4C7 /* UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		36A003A4294810E90028646A /* TCABankingApp */ = {
+			isa = PBXGroup;
+			children = (
+				36A003F12948D3940028646A /* Info.plist */,
+				36A003E02948BC570028646A /* Views */,
+				36A003DC2948B49A0028646A /* Services */,
+				36A003D72948AD920028646A /* Domains */,
+				36A003D4294815C00028646A /* Contexts */,
+				36A003A5294810E90028646A /* TCABankingApp.swift */,
+				36A003A9294810EB0028646A /* Assets.xcassets */,
+				36A003AB294810EB0028646A /* Preview Content */,
+			);
+			path = TCABankingApp;
+			sourceTree = "<group>";
+		};
+		36A003AB294810EB0028646A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				36A003AC294810EB0028646A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		36A003D4294815C00028646A /* Contexts */ = {
+			isa = PBXGroup;
+			children = (
+				36A003D5294815D10028646A /* AppContext.swift */,
+				36A003F22948E00A0028646A /* APIConfiguration.swift */,
+			);
+			path = Contexts;
+			sourceTree = "<group>";
+		};
+		36A003D72948AD920028646A /* Domains */ = {
+			isa = PBXGroup;
+			children = (
+				CE292D0E2972C47B008AF82F /* Savings */,
+				CE6A2D8929709970004F11C6 /* Accounts */,
+				36A003E32948BD300028646A /* User */,
+			);
+			path = Domains;
+			sourceTree = "<group>";
+		};
+		36A003DC2948B49A0028646A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CE3FA6BE2972E6FD00BA1580 /* UUID */,
+				CE6A2D66296F685A004F11C6 /* Rounding */,
+				36A003F42948E7540028646A /* JSONCoding */,
+				36A003DD2948B6010028646A /* HTTPClient */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		36A003DD2948B6010028646A /* HTTPClient */ = {
+			isa = PBXGroup;
+			children = (
+				36A003DE2948B6120028646A /* HTTPClient.swift */,
+			);
+			path = HTTPClient;
+			sourceTree = "<group>";
+		};
+		36A003E02948BC570028646A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CEC008012975C3CC0016FC95 /* Savings */,
+				CE6A2D8C29709A29004F11C6 /* Accounts */,
+				36A003E22948BC680028646A /* Login */,
+				36A003A7294810E90028646A /* RootView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		36A003E22948BC680028646A /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				36AF7A31294A2324000BE44F /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		36A003E32948BD300028646A /* User */ = {
+			isa = PBXGroup;
+			children = (
+				36A003EC2948C3970028646A /* Client */,
+				36A003E42948BD370028646A /* Models */,
+				36A003EF2948C50A0028646A /* UserStore.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		36A003E42948BD370028646A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				36A003E52948BD400028646A /* User.swift */,
+				36FE0EC3294946210039D4C7 /* UserClientError.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		36A003EC2948C3970028646A /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				36A003ED2948C3A80028646A /* UserClient.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		36A003F42948E7540028646A /* JSONCoding */ = {
+			isa = PBXGroup;
+			children = (
+				36A003F52948E7620028646A /* JSONCoders.swift */,
+			);
+			path = JSONCoding;
+			sourceTree = "<group>";
+		};
+		36AF7A1C2949BBF9000BE44F /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				CEC008102975F98B0016FC95 /* Savings */,
+				3685547D294A958D00B16055 /* Accounts */,
+				3685547C294A958600B16055 /* Login */,
+				36855476294A8D9200B16055 /* PageObject.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		36AF7A1D2949BCD9000BE44F /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				CE4C3D262971C6D200E12217 /* Accounts */,
+				36855473294A8CFD00B16055 /* Login */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		36AF7A212949DF6C000BE44F /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				36FE0EA229492B6F0039D4C7 /* UserStoreTests.swift */,
+				364D332E294BA7B500E6508D /* UserClientTests.swift */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
+		36AF7A2C2949E990000BE44F /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				36FE0EC029493DDF0039D4C7 /* TestUserClient.swift */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
+		36F26B052949071100C8C602 /* UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				36FE0EBF29493DCA0039D4C7 /* TestDependencies */,
+				CE500B1B29721881000C6C70 /* Extensions */,
+				CE6A2D62296F67FA004F11C6 /* Services */,
+				36F26B0B2949073100C8C602 /* Features */,
+			);
+			path = UnitTests;
+			sourceTree = "<group>";
+		};
+		36F26B0B2949073100C8C602 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				CE3FA6C52973285900BA1580 /* Savings */,
+				CE1315A32970B8300079D037 /* Accounts */,
+				36AF7A212949DF6C000BE44F /* Users */,
+				36FE0EA129492B6F0039D4C7 /* UnitTests-Bridging-Header.h */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		36FE0EBB29493B640039D4C7 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				36FE0EBC29493B700039D4C7 /* TestHelpers.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		36FE0EBF29493DCA0039D4C7 /* TestDependencies */ = {
+			isa = PBXGroup;
+			children = (
+				36FE0EBB29493B640039D4C7 /* Utils */,
+				CE1315A22970B8230079D037 /* Accounts */,
+				36AF7A2C2949E990000BE44F /* Users */,
+			);
+			path = TestDependencies;
+			sourceTree = "<group>";
+		};
+		36FE0ECB2949BB060039D4C7 /* UITests */ = {
+			isa = PBXGroup;
+			children = (
+				36AF7A1D2949BCD9000BE44F /* Tests */,
+				36AF7A1C2949BBF9000BE44F /* Pages */,
+				36855471294A8C4F00B16055 /* BaseTestCase.swift */,
+			);
+			path = UITests;
+			sourceTree = "<group>";
+		};
+		CE1315A22970B8230079D037 /* Accounts */ = {
+			isa = PBXGroup;
+			children = (
+				CE4C3D292971C97600E12217 /* TestAccountClient.swift */,
+			);
+			path = Accounts;
+			sourceTree = "<group>";
+		};
+		CE1315A32970B8300079D037 /* Accounts */ = {
+			isa = PBXGroup;
+			children = (
+				CE1315A42970B8420079D037 /* AccountStoreTests.swift */,
+				CE1315A62970B8520079D037 /* AccountClientTests.swift */,
+			);
+			path = Accounts;
+			sourceTree = "<group>";
+		};
+		CE1315A82970B8780079D037 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				CE1315A92970B8830079D037 /* AccountClient.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		CE292D0E2972C47B008AF82F /* Savings */ = {
+			isa = PBXGroup;
+			children = (
+				CE292D0F2972C4BC008AF82F /* Client */,
+				CE292D102972C4C6008AF82F /* Model */,
+				CEC0080C2975D96B0016FC95 /* SavingsStore.swift */,
+			);
+			path = Savings;
+			sourceTree = "<group>";
+		};
+		CE292D0F2972C4BC008AF82F /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				CE292D112972C689008AF82F /* SavingsClient.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		CE292D102972C4C6008AF82F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE292D132972C6C9008AF82F /* SavingsClientError.swift */,
+				CE3FA6C929732A8A00BA1580 /* SavingsResponse.swift */,
+				CEC008042975C66D0016FC95 /* SavingsRequest.swift */,
+				CEC0080E2975DAC50016FC95 /* SavingGoal.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE3FA6BE2972E6FD00BA1580 /* UUID */ = {
+			isa = PBXGroup;
+			children = (
+				CE3FA6BF2972E70800BA1580 /* UUIDService.swift */,
+			);
+			path = UUID;
+			sourceTree = "<group>";
+		};
+		CE3FA6C52973285900BA1580 /* Savings */ = {
+			isa = PBXGroup;
+			children = (
+				CE3FA6C62973286600BA1580 /* SavingsClientTests.swift */,
+			);
+			path = Savings;
+			sourceTree = "<group>";
+		};
+		CE4C3D262971C6D200E12217 /* Accounts */ = {
+			isa = PBXGroup;
+			children = (
+				CE3FA6C1297311E500BA1580 /* AccountTests.swift */,
+			);
+			path = Accounts;
+			sourceTree = "<group>";
+		};
+		CE500B1829721376000C6C70 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CE500B2229722424000C6C70 /* Amount+Decimal.swift */,
+				CE500B1929721386000C6C70 /* Date+Range.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CE500B1B29721881000C6C70 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CE500B1C2972188B000C6C70 /* DateTests.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CE6A2D62296F67FA004F11C6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CE6A2D63296F6800004F11C6 /* RoundingServiceTests */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CE6A2D63296F6800004F11C6 /* RoundingServiceTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE6A2D64296F681E004F11C6 /* RoundingServiceTests.swift */,
+			);
+			path = RoundingServiceTests;
+			sourceTree = "<group>";
+		};
+		CE6A2D66296F685A004F11C6 /* Rounding */ = {
+			isa = PBXGroup;
+			children = (
+				CE6A2D6A296F6933004F11C6 /* RoundingService.swift */,
+			);
+			path = Rounding;
+			sourceTree = "<group>";
+		};
+		CE6A2D8929709970004F11C6 /* Accounts */ = {
+			isa = PBXGroup;
+			children = (
+				CE500B1829721376000C6C70 /* Extensions */,
+				CE1315A82970B8780079D037 /* Client */,
+				CE6A2D8F29709C52004F11C6 /* Models */,
+				CE6A2D8A29709978004F11C6 /* AccountStore.swift */,
+			);
+			path = Accounts;
+			sourceTree = "<group>";
+		};
+		CE6A2D8C29709A29004F11C6 /* Accounts */ = {
+			isa = PBXGroup;
+			children = (
+				CE6A2D8D29709A35004F11C6 /* AccountView.swift */,
+				CE500B162971E1A4000C6C70 /* DatePickerView.swift */,
+				CE500B20297223EA000C6C70 /* TransactionsView.swift */,
+			);
+			path = Accounts;
+			sourceTree = "<group>";
+		};
+		CE6A2D8F29709C52004F11C6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CE6A2D9029709C5C004F11C6 /* Account.swift */,
+				CE1315AB2970B8BB0079D037 /* AccountClientError.swift */,
+				CE1315AD2970BB020079D037 /* Transaction.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CEC008012975C3CC0016FC95 /* Savings */ = {
+			isa = PBXGroup;
+			children = (
+				CEC008022975C3E90016FC95 /* SavingsView.swift */,
+			);
+			path = Savings;
+			sourceTree = "<group>";
+		};
+		CEC008102975F98B0016FC95 /* Savings */ = {
+			isa = PBXGroup;
+			children = (
+				CEC008112975F9920016FC95 /* SavingsPage.swift */,
+			);
+			path = Savings;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		36A003A1294810E90028646A /* TCABankingApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36A003C6294810EB0028646A /* Build configuration list for PBXNativeTarget "TCABankingApp" */;
+			buildPhases = (
+				36A0039E294810E90028646A /* Sources */,
+				36A0039F294810E90028646A /* Frameworks */,
+				36A003A0294810E90028646A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TCABankingApp;
+			packageProductDependencies = (
+				36A003D02948117C0028646A /* ComposableArchitecture */,
+			);
+			productName = BeRealTakeHomeExercise;
+			productReference = 36A003A2294810E90028646A /* TCABankingApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		36F26B032949071100C8C602 /* UnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36F26B082949071100C8C602 /* Build configuration list for PBXNativeTarget "UnitTests" */;
+			buildPhases = (
+				36F26B002949071100C8C602 /* Sources */,
+				36F26B012949071100C8C602 /* Frameworks */,
+				36F26B022949071100C8C602 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				36FE0EA529492C220039D4C7 /* PBXTargetDependency */,
+			);
+			name = UnitTests;
+			productName = UnitTests;
+			productReference = 36F26B042949071100C8C602 /* UnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		36FE0EC92949BB060039D4C7 /* UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36FE0ED22949BB060039D4C7 /* Build configuration list for PBXNativeTarget "UITests" */;
+			buildPhases = (
+				36FE0EC62949BB060039D4C7 /* Sources */,
+				36FE0EC72949BB060039D4C7 /* Frameworks */,
+				36FE0EC82949BB060039D4C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				36FE0ED12949BB060039D4C7 /* PBXTargetDependency */,
+			);
+			name = UITests;
+			productName = UITests;
+			productReference = 36FE0ECA2949BB060039D4C7 /* UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		36A0039A294810E90028646A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					36A003A1294810E90028646A = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					36F26B032949071100C8C602 = {
+						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = 1410;
+						TestTargetID = 36A003A1294810E90028646A;
+					};
+					36FE0EC92949BB060039D4C7 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 36A003A1294810E90028646A;
+					};
+				};
+			};
+			buildConfigurationList = 36A0039D294810E90028646A /* Build configuration list for PBXProject "TCABankingApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 36A00399294810E90028646A;
+			packageReferences = (
+				36A003CF2948117C0028646A /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
+			productRefGroup = 36A003A3294810E90028646A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				36A003A1294810E90028646A /* TCABankingApp */,
+				36F26B032949071100C8C602 /* UnitTests */,
+				36FE0EC92949BB060039D4C7 /* UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		36A003A0294810E90028646A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36A003D3294811980028646A /* README.md in Resources */,
+				36A003AD294810EB0028646A /* Preview Assets.xcassets in Resources */,
+				36A003AA294810EB0028646A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36F26B022949071100C8C602 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36FE0EC82949BB060039D4C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		36A0039E294810E90028646A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE3FA6C02972E70800BA1580 /* UUIDService.swift in Sources */,
+				CE1315AE2970BB020079D037 /* Transaction.swift in Sources */,
+				CE292D142972C6C9008AF82F /* SavingsClientError.swift in Sources */,
+				36A003A8294810E90028646A /* RootView.swift in Sources */,
+				CEC008032975C3E90016FC95 /* SavingsView.swift in Sources */,
+				36FE0EC4294946210039D4C7 /* UserClientError.swift in Sources */,
+				36A003DF2948B6120028646A /* HTTPClient.swift in Sources */,
+				CE1315AC2970B8BB0079D037 /* AccountClientError.swift in Sources */,
+				CE500B21297223EA000C6C70 /* TransactionsView.swift in Sources */,
+				CE6A2D6B296F6933004F11C6 /* RoundingService.swift in Sources */,
+				CE6A2D8E29709A35004F11C6 /* AccountView.swift in Sources */,
+				CE6A2D8B29709978004F11C6 /* AccountStore.swift in Sources */,
+				36A003E62948BD400028646A /* User.swift in Sources */,
+				36A003F62948E7620028646A /* JSONCoders.swift in Sources */,
+				CE3FA6CA29732A8A00BA1580 /* SavingsResponse.swift in Sources */,
+				CE4C3D212970EE6900E12217 /* TestUserClient.swift in Sources */,
+				CE292D122972C689008AF82F /* SavingsClient.swift in Sources */,
+				36A003A6294810E90028646A /* TCABankingApp.swift in Sources */,
+				36A003F02948C50A0028646A /* UserStore.swift in Sources */,
+				36A003F32948E00A0028646A /* APIConfiguration.swift in Sources */,
+				CE500B172971E1A4000C6C70 /* DatePickerView.swift in Sources */,
+				CEC0080D2975D96B0016FC95 /* SavingsStore.swift in Sources */,
+				36A003D6294815D10028646A /* AppContext.swift in Sources */,
+				CE4C3D202970EE3E00E12217 /* TestHelpers.swift in Sources */,
+				36AF7A32294A2324000BE44F /* LoginView.swift in Sources */,
+				CE6A2D9129709C5C004F11C6 /* Account.swift in Sources */,
+				CEC0080F2975DAC50016FC95 /* SavingGoal.swift in Sources */,
+				CE4C3D2A2971C97600E12217 /* TestAccountClient.swift in Sources */,
+				CE1315AA2970B8830079D037 /* AccountClient.swift in Sources */,
+				CEC008052975C66D0016FC95 /* SavingsRequest.swift in Sources */,
+				CE500B2429722463000C6C70 /* Amount+Decimal.swift in Sources */,
+				36A003EE2948C3A80028646A /* UserClient.swift in Sources */,
+				CE500B1A29721386000C6C70 /* Date+Range.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36F26B002949071100C8C602 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE3FA6C82973288300BA1580 /* SavingsClientTests.swift in Sources */,
+				CE1315A72970B8520079D037 /* AccountClientTests.swift in Sources */,
+				CE500B1D2972188B000C6C70 /* DateTests.swift in Sources */,
+				364D332F294BA7B500E6508D /* UserClientTests.swift in Sources */,
+				36FE0EA329492B6F0039D4C7 /* UserStoreTests.swift in Sources */,
+				CE6A2D65296F681E004F11C6 /* RoundingServiceTests.swift in Sources */,
+				CE1315A52970B8420079D037 /* AccountStoreTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36FE0EC62949BB060039D4C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36855477294A8D9200B16055 /* PageObject.swift in Sources */,
+				CE3FA6C42973189A00BA1580 /* Date+Range.swift in Sources */,
+				CEC008122975F9920016FC95 /* SavingsPage.swift in Sources */,
+				CE500B1F29722335000C6C70 /* TransactionsPage.swift in Sources */,
+				36855472294A8C4F00B16055 /* BaseTestCase.swift in Sources */,
+				36855470294A8C2000B16055 /* LoginPage.swift in Sources */,
+				CE3FA6C2297311E500BA1580 /* AccountTests.swift in Sources */,
+				36855475294A8D1200B16055 /* LoginUITestCase.swift in Sources */,
+				36855479294A955900B16055 /* AccountPage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		36FE0EA529492C220039D4C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 36A003A1294810E90028646A /* TCABankingApp */;
+			targetProxy = 36FE0EA429492C220039D4C7 /* PBXContainerItemProxy */;
+		};
+		36FE0ED12949BB060039D4C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 36A003A1294810E90028646A /* TCABankingApp */;
+			targetProxy = 36FE0ED02949BB060039D4C7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		36A003C4294810EB0028646A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		36A003C5294810EB0028646A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		36A003C7294810EB0028646A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TCABankingApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TCABankingApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adamf.TCABankingApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		36A003C8294810EB0028646A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TCABankingApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TCABankingApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adamf.TCABankingApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		36F26B092949071100C8C602 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adamf.UnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "UnitTests/Features/UnitTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TCABankingApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TCABankingApp";
+			};
+			name = Debug;
+		};
+		36F26B0A2949071100C8C602 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adamf.UnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "UnitTests/Features/UnitTests-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TCABankingApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TCABankingApp";
+			};
+			name = Release;
+		};
+		36FE0ED32949BB060039D4C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adamf.UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TCABankingApp;
+			};
+			name = Debug;
+		};
+		36FE0ED42949BB060039D4C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adamf.UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TCABankingApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		36A0039D294810E90028646A /* Build configuration list for PBXProject "TCABankingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36A003C4294810EB0028646A /* Debug */,
+				36A003C5294810EB0028646A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36A003C6294810EB0028646A /* Build configuration list for PBXNativeTarget "TCABankingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36A003C7294810EB0028646A /* Debug */,
+				36A003C8294810EB0028646A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36F26B082949071100C8C602 /* Build configuration list for PBXNativeTarget "UnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36F26B092949071100C8C602 /* Debug */,
+				36F26B0A2949071100C8C602 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36FE0ED22949BB060039D4C7 /* Build configuration list for PBXNativeTarget "UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36FE0ED32949BB060039D4C7 /* Debug */,
+				36FE0ED42949BB060039D4C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		36A003CF2948117C0028646A /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.47.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		36A003D02948117C0028646A /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 36A003CF2948117C0028646A /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 36A0039A294810E90028646A /* Project object */;
+}
